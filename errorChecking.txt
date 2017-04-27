@@ -1,0 +1,20 @@
+Error Checking for Functions:
+
+getSensorData:
+- return error if cannot dongle not connected
+- return if no sensors connected to dongle
+- return if error getting data from sensors
+
+putRecordBucket:
+- return (immediately) if data array is empty
+- return if error with accessing specified bucket 
+- returns reponse from AWS - so if error indicated in response, can relay that to user
+
+Lambda Function:
+-errors would be reported on AWS, cannot see locally
+
+getFileFromS3:
+- return error if specified bucket DNE
+- return error if no processed data file is found in bucket
+- forward any errors returned from AWS when attempting to download file
+
