@@ -1,0 +1,17 @@
+Testing Functions
+
+getFileFromS3:
+- make sure that correctly labelled files are only downloaded- 'Final' denotes processed data file
+
+getSensorData:
+- make sure correct type of data is stored to array
+
+putRecordInBucket:
+- make sure data properly formatted to be uploaded
+- meaningful file name assigned
+- all data uploaded
+
+lambda function:
+- trigerred properly
+- thresholds properly set
+- meaningful file name assigned
